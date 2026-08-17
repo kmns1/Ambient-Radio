@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+* {
+    user-select: none;
+    touch-action: none;
+}
+
+.dark {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.253);
+    z-index: 1000;
+    pointer-events: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 120%;
+    height: 100vh;
+    perspective: 1000px;
+    z-index: 0;
+    background:
+        radial-gradient(circle at 50% 45%,
+            rgba(255, 255, 255, 0.1),
+            transparent 55%),
+        linear-gradient(180deg,
+            #a5b5b7,
+            #899b9d);
+}
+
+.table {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-image: linear-gradient(rgba(45, 30, 22, 0.65),
+            rgba(45, 30, 22, 0.65)), url(./Image/woodTableTexture.jpg);
+    background-size: 120% 120%;
+    background-position: center;
+    transform: rotateX(45deg);
+    bottom: 0;
+}
+
+.radio {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    width: 60%;
+    max-width: 325px;
+    aspect-ratio: 650 / 430;
+    background-image: url(./Image/radio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 20%;
+    z-index: 10;
+    transition-duration: 0.5s;
+}
+
+.radio * {
+    pointer-events: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    margin-top: 7%;
+    margin-right: 7%;
+    width: 50%;
+    height: 60%;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    border: solid black 1.5px;
+    background-color: rgb(50, 50, 50);
+}
+
+#time {
+    position: absolute;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-size: clamp(10px, 2vw, 20px);
+    color: white;
+    transition: opactiy 0.3s;
+}
+
+.soundSet {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.inner {
+    position: relative;
+    display: flex;
+    width: max-content;
+    height: 100%;
+}
+
+.soundSetBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    aspect-ratio: 1/1;
+    min-height: 0;
+    min-width: 0;
+    background-color: rgb(50, 50, 50);
+    border: 1px solid black;
+    transition: 0.2s;
+}
+
+.soundSet i {
+    color: white;
+    font-size: clamp(8px, 2vw, 15px);
+}
+
+.soundSetBtn:hover {
+    background-color: rgb(63, 63, 63);
+}
+
+.soundSetBtn:active {
+    background-color: rgb(26, 26, 26);
+}
+
+.setting {
+    height: 40%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: clamp(3px, 2vw, 15px);
+    row-gap: clamp(3px, 2vw, 8px);
+    justify-content: center;
+    justify-items: center;
+    margin-top: 15%;
+}
+
+.soundBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    aspect-ratio: 2/1;
+    min-width: 0;
+    min-height: 0;
+    border-radius: 10px;
+    border: solid black 1.5px;
+    background-color: rgb(50, 50, 50);
+    transition: 0.2s;
+}
+
+.soundBtn:active {
+    background-color: rgb(56, 56, 56);
+}
+
+.soundBtn i {
+    color: white;
+    font-size: clamp(5px, 0.8vw, 15px);
+}
+
+.volumeSet {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 65%;
+    aspect-ratio: 1/1;
+    background-color: rgb(83, 83, 83);
+    border-radius: 50%;
+    touch-action: none;
+}
+
+.volumeObj {
+    height: 50%;
+    width: clamp(1px, 10%, 2px);
+    background-color: black;
+    transform-origin: center bottom;
+}
