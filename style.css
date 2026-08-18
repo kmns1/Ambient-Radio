@@ -12,7 +12,13 @@ html {
     height: 100dvh;
     margin: 0;
     padding: 0;
-    background-color: red;
+    background:
+        radial-gradient(circle at 50% 45%,
+            rgba(255, 255, 255, 0.1),
+            transparent 55%),
+        linear-gradient(180deg,
+            #a5b5b7,
+            #899b9d);
 }
 .dark {
     position: absolute;
