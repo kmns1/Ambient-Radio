@@ -63,13 +63,13 @@ body {
 .table {
     position: absolute;
     width: 100%;
-    height: 40%;
+    height: 30%;
 
     background-image: linear-gradient(rgba(45, 30, 22, 0.65),
             rgba(45, 30, 22, 0.65)), url(./Image/woodTableTexture.jpg);
     background-size: 120% 120%;
     background-position: center;
-    transform: translate(-50%, 100px)rotateX(45deg);
+    transform: translateX(-50%)rotateX(45deg);
     left: 50%;
     bottom: 0;
 }
