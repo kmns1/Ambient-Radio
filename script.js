@@ -33,7 +33,7 @@ let audioVolume = [
 
 
 radio.addEventListener('click', () => {
-    radio.style.transform = "translateY(-80%) scale(1.5)"
+    radio.style.transform = "translateX(-50%) translateY(-80%) scale(1.5)"
     soundBtn.forEach(btn => {
         btn.style.pointerEvents = "auto"
     })
@@ -47,7 +47,7 @@ radio.addEventListener('click', () => {
 
 background.addEventListener('click', () => {
     if (setting) {
-        radio.style.transform = "translateY(0) scale(1)"
+        radio.style.transform = "translateX(-50%) translateY(0) scale(1)"
         soundBtn.forEach(btn => {
             btn.style.pointerEvents = "none"
         })
