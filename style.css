@@ -9,8 +9,8 @@
 
 main,
 html {
-    width: 100dvw;
-    height: 100dvh;
+    width: 100lvw;
+    height: 100lvh;
     margin: 0;
     padding: 0;
 }
@@ -36,8 +36,6 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
     overflow: hidden;
     background:
         radial-gradient(circle at 50% 45%,
