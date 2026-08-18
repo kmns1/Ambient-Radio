@@ -24,7 +24,10 @@ body {
 }
 
 .background {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+
     width: 120%;
     height: 100vh;
     perspective: 1000px;
@@ -35,9 +38,8 @@ body {
             transparent 55%),
         linear-gradient(180deg,
             #a5b5b7,
-            #899b9d);
+           #899b9d);
 }
-
 .table {
     position: absolute;
     width: 100%;
