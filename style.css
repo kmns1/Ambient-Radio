@@ -3,6 +3,9 @@
 * {
     user-select: none;
     touch-action: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 main,
@@ -36,7 +39,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-      background:
+    background:
         radial-gradient(circle at 50% 45%,
             rgba(255, 255, 255, 0.1),
             transparent 55%),
@@ -92,10 +95,6 @@ body {
     transition-duration: 0.5s;
 }
 
-.radio * {
-    pointer-events: none;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -116,6 +115,8 @@ body {
     height: 20%;
     border: solid black 1.5px;
     background-color: rgb(50, 50, 50);
+    pointer-events: none;
+
 }
 
 #time {
@@ -134,6 +135,8 @@ body {
     opacity: 0;
     pointer-events: none;
     transition: 0.3s;
+    pointer-events: none;
+
 }
 
 .inner {

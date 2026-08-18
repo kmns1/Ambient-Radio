@@ -34,8 +34,12 @@ let audioVolume = [
 
 radio.addEventListener('click', () => {
     radio.style.transform = "translateY(-80%) scale(1.5)"
-    document.querySelectorAll('.radio *').forEach(obj => {
-        obj.style.pointerEvents = "auto"
+    soundBtn.forEach(btn => {
+        btn.style.pointerEvents = "auto"
+    })
+
+    volume.forEach(btn => {
+        btn.style.pointerEvents = "auto"
     })
     background.style.filter = "blur(5px)"
     setting = true
@@ -44,8 +48,12 @@ radio.addEventListener('click', () => {
 background.addEventListener('click', () => {
     if (setting) {
         radio.style.transform = "translateY(0) scale(1)"
-        document.querySelectorAll('.radio *').forEach(obj => {
-            obj.style.pointerEvents = "none"
+        soundBtn.forEach(btn => {
+            btn.style.pointerEvents = "none"
+        })
+
+        volume.forEach(btn => {
+            btn.style.pointerEvents = "none"
         })
         background.style.filter = "blur(0px)"
         setting = false
@@ -148,7 +156,7 @@ soundSetBtn.forEach((btn, index) => {
                 break;
             case 6:
                 selectedAudio[clickBtn] = "People"
-                break;   
+                break;
             default:
                 selectedAudio[clickBtn] = ""
                 break;
