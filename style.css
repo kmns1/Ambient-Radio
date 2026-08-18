@@ -7,14 +7,13 @@
     padding: 0;
 }
 
-main,
 html {
-    width: 100lvw;
-    height: 100lvh;
+    width: 100dvw;
+    height: 100dvh;
     margin: 0;
     padding: 0;
+    background-color: red;
 }
-
 .dark {
     position: absolute;
     left: 50%;
