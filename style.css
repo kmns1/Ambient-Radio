@@ -54,7 +54,7 @@ body {
             rgba(45, 30, 22, 0.65)), url(./Image/woodTableTexture.jpg);
     background-size: 120% 120%;
     background-position: center;
-    transform:  translateY(50px) rotateX(45deg);
+    transform:  translateY(100px) rotateX(45deg);
     bottom: 0;
 }
 
