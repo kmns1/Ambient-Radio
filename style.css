@@ -36,6 +36,14 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+
+        background:
+        radial-gradient(circle at 50% 45%,
+            rgba(255, 255, 255, 0.1),
+            transparent 55%),
+        linear-gradient(180deg,
+            #a5b5b7,
+            #899b9d);
 }
 
 .background {
@@ -51,13 +59,6 @@ body {
     padding: 0;
     perspective: 1000px;
     z-index: 0;
-    background:
-        radial-gradient(circle at 50% 45%,
-            rgba(255, 255, 255, 0.1),
-            transparent 55%),
-        linear-gradient(180deg,
-            #a5b5b7,
-            #899b9d);
 }
 
 .table {
