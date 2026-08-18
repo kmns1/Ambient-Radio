@@ -5,7 +5,8 @@
     touch-action: none;
 }
 
-main,html{
+main,
+html {
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -14,8 +15,11 @@ main,html{
 
 .dark {
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     margin: 0;
     padding: 0;
     background-color: rgba(0, 0, 0, 0.253);
@@ -35,14 +39,14 @@ body {
 }
 
 .background {
-    position: fixed;
+    position: absolute;
 
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 
     width: 120%;
-    height: 100vh;
+    height: 120vh;
     margin: 0;
     padding: 0;
     perspective: 1000px;
@@ -55,6 +59,7 @@ body {
             #a5b5b7,
             #899b9d);
 }
+
 
 .table {
     position: absolute;
