@@ -79,7 +79,6 @@ body {
 .radio {
     position: absolute;
     left: 50%;
-    bottom: 15%
     transform: translateX(-50%);
     display: flex;
     justify-content: flex-end;
@@ -92,10 +91,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+    bottom: 15%;
     z-index: 10;
     transition-duration: 0.5s;
 }
+
 
 .container {
     display: flex;
